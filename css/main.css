@@ -1,0 +1,417 @@
+@font-face { 
+	font-family:'Sarabun';
+	src: url("../fonts/Sarabun-Regular.ttf");		
+}
+
+@font-face { 
+	font-family:'Courgette';
+	src: url("../fonts/Courgette-Regular.ttf");		
+}
+
+@font-face { 
+	font-family:'Tangerine';
+	src: url("../fonts/Tangerine-Regular.ttf");		
+}
+
+@font-face { 
+	font-family:'Bauhaus';
+	src: url("../fonts/Bauhaus-Regular.ttf");		
+}
+
+
+body{	/*Fondo*/
+	background: fixed;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+	background-color:#204B9B;
+	/*font-family:Helvetica,Futura,Arial,Verdana,sans-serif;*/
+	font-family: 'Sarabun', sans-serif;
+	
+}
+
+@media screen and (min-width: 800px) { /*Repite el fondo*/
+	section p{
+		background-repeat: 1;
+	}
+}
+
+/*Cargar imagen de fondo x pagina*/
+#pag1{
+	background-image: url("../img/fondos/FondoPag1.jpg");
+}
+
+#pag2{
+	background-image: url("../img/fondos/FondoPag2.jpg");
+}
+
+#pag3{
+	background-image: url("../img/fondos/FondoPag3.jpg");
+}
+
+#pag4{
+	background-image: url("../img/fondos/FondoPag4.jpg");
+}
+
+#pag5{
+	background-image: url("../img/fondos/FondoPag5.jpg");
+}
+
+#pag6{
+	background-image: url("../img/fondos/FondoPag6.jpg");
+}
+
+#pag7{
+	background-image: url("../img/fondos/FondoPag7.jpg");
+}
+
+.imgIcono{	/*icono pie de pagina*/
+	display: flex; 	  	
+	background-image: url("../img/iconos/IconoJB.png");
+	background-repeat: no-repeat;
+	width: 65px; 
+  	height: 73px; 
+}
+
+.jumbotron {
+	background-image: url("../img/fondos/FondoJumb.jpg");	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-color: rgb(0,76,153);		
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	box-shadow: 0px 8px 50px #1F1F1F;	
+}
+
+header img:hover{ 
+	transition-duration: 1s;
+	transform: scale(1.1);	
+}
+
+header img{
+	transition-duration: 2s;
+	transform: scale(1);	
+}
+
+header h3:hover{ 
+	transition-duration: 1s;
+	transform: scale(1.2);	
+}
+
+header h3{
+	transition-duration: 2s;
+	transform: scale(1);	
+}
+
+.nombre{
+	font-family:'Bauhaus';
+	font-size: 8rem;
+	color: white;
+	margin: 0px;	
+	line-height: 85px;
+	text-shadow: 6px 10px 20px #002446 ,-1px -2px 10px #00396E ;
+
+ 
+
+}
+
+.apellido{
+	font-family:'Bauhaus';
+	font-size: 5.3rem;
+	color: white;
+	margin: 0px;
+	text-shadow: 6px 10px 20px #002446 ,-1px -2px 10px #00396E;
+}
+
+
+
+.j-menu{ /*fondo de la barra de menu*/	
+    background-image:  linear-gradient(0deg,rgba(0,0,0,0.7),#000724, rgba(0,0,0,0.5), rgba(0,0,0,0.2),#0F165B);
+}
+
+
+.itemBarraNav{ /*ancho de los elemntos de la barra de navegación*/
+	width: 150px;
+}
+
+.j-menuNav{ /*texto del menu*/
+	margin: 0;	
+	font-size: 1.3rem;		
+	color:white;
+	text-shadow: 2px 2px 3px #000000;	
+}
+
+.j-subMenuNav{ /*texto debajo del menu*/
+	margin: 0;	
+	font-size: 0.9rem;
+	text-shadow: 2px 2px 3px #000000;
+	color:#FFF589;
+	font-family: 'Courgette', sans-serif;
+}
+
+#link1:hover p{	
+	transition-duration: 2s;
+	color:#F1BA24;
+	text-shadow: 2px 2px 3px #000000;
+}
+
+section h2{	/*Texto titulos con iconos*/
+	color:white;
+	font-weight: 2px;
+	font-style: italic;
+	font-size: 1.6rem;
+		
+}
+
+section p{
+	color:white;	
+	font-size: 1.3rem;
+}
+
+
+
+section p, h2, figure{ /*sombreado y redondeado de bordes,  texto de titulos con iconos*/
+	padding: 10px;
+	text-shadow: 3px 3px 4px black;
+	background: rgba(0,40,60,0.3);
+	box-shadow: 2px 2px 4px black;
+	border-radius: 15px;
+}
+
+
+
+@media screen and (min-width: 800px) { /*adapta los parrafas al 100px en resoluciones min 800*/
+	section p{
+			padding: 100px;
+	}
+}
+
+
+.pie{ /*pie de pagina*/
+	background-image: url("../img/fondos/FondoJumb.jpg");
+	position: relative;
+    bottom: 0;
+	padding: 10px;
+	color:white;	
+	text-shadow: 2px 2px 3px black;	
+	filter: contrast(140%);	
+}
+
+/*formato texto datos de contacto*/
+.textContacto{		
+	font-size: 1rem;	
+	font-family: 'Sarabun', sans-serif;	
+	background: linear-gradient(to right, rgba(11,15,62,0) 0%, rgba(11,15,62,0.4) 50%, rgba(11,15,62,0) 100%);
+	border-radius: 5px;		
+	text-shadow: 1px 1px 2px black,-1px -1px 2px black;	
+}
+
+
+/***TARJETAS***/
+.contenedor_tarjeta{	/*div de la tarjeta*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.contenedor_tarjeta:hover figure{ /*rotar al mover el mouse sobre la tarjeta*/
+	-webkit-transform: perspective(1000px) rotateY(180deg);
+	-ms-transform: perspective(1000px) rotateY(180deg);
+	-o-transform: perspective(1000px) rotateY(180deg);
+	transform: perspective(1000px) rotateY(180deg);			
+}
+
+.tarjeta{ /*elemento figure que contine imagen y texto */
+	background-color: white;
+	position: relative;
+	-webkit-transition: all ease 1s;
+	-o-transition: all ease 1s;
+	transition: all ease 1s;
+	-webkit-transform-style:  preserve-3d;
+	-moz-transform-style:  preserve-3d;
+	-ms-transform-style:  preserve-3d;
+	transform-style:  preserve-3d;
+	-webkit-transform: perspective(1000px) rotateY(0deg);
+	-ms-transform: perspective(1000px) rotateY(0deg);
+	-o-transform: perspective(1000px) rotateY(0deg);
+	transform: perspective(1000px) rotateY(0deg);	
+	box-shadow:  0px 0px 0px 20px rgba(0,0,0,0.3);
+}	
+
+.frente { /*contine la imagen del Figure*/
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all ease 0.2s;
+
+}
+
+.posterior{	 /*contine el texto de la tarjeta*/	
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all ease 0.2s;	
+	position: absolute;
+	top: 0px;	
+	left: 0px;
+	color: white;
+	-webkit-transform: perspective(1000px) rotateY(180deg);
+	-ms-transform: perspective(1000px) rotateY(180deg);
+	-o-transform: perspective(1000px) rotateY(180deg);
+	transform: perspective(1000px) rotateY(180deg);
+	overflow: auto;		
+	-webkit-background-image: linear-gradient(45deg,rgba(0,116,150,0.8),black);
+	-moz-background-image: linear-gradient(45deg,rgba(0,116,150,0.8),black);
+	-ms-background-image: linear-gradient(45deg,rgba(0,116,150,0.8),black);
+	-o-background-image: linear-gradient(45deg,rgba(0,116,150,0.8),black);
+	background-image: linear-gradient(45deg,rgba(0,116,150,0.8),black);
+	backface-visibility: hidden;
+}
+
+.posterior::-webkit-scrollbar{ /*no Firefox*/
+	width: 10px;
+}
+
+
+.posterior::-webkit-scrollbar-thumb{/*no Firefox*/
+	background: white;
+	border-radius: 5px;
+}
+
+figcaption p{ /*texto de la tarjeta*/		
+	font-size: 1rem;
+	padding: 10%;	
+	background: none;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+figcaption h2{	/*titulo de tarjeta*/	
+	font-size: 1.5rem;
+	background: none;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+/*oculta infomración de los proyectos al cargar la página*/
+.proyecto{
+	display: none;
+}
+
+/***CAROUSEL***/
+/*Formato del slide*/
+.carousel-inner p{			
+	font-size: 1.2rem;
+	padding: 10px;
+	text-shadow: 3px 3px 4px black;	
+	background: rgba(0,40,60,0.3);
+	box-shadow: 2px 2px 4px black;
+	border-radius: 15px;
+}
+
+.carousel-inner h2{		/*Texto infomrativo del carousel*/
+	font-size: 1.5rem;
+	padding: 10px;
+	text-shadow: 3px 3px 4px #186FCD;		
+	background-color: rgba(122,255,255,0.8);
+	color: #15115E;
+	box-shadow: 2px 2px 4px black;
+	border-radius: 15px;
+}
+
+.carousel{ /*sombra*/
+	box-shadow: black;
+}
+
+.imgCarousel{
+	border-radius: 20px;
+}
+
+.carousel-indicators{ /*indicadores fondo*/
+		background-image:  linear-gradient(90deg,rgba(9,66,83,0.2), rgba(0,36,41,1), rgba(9,66,83,0.2));
+		padding-top: 3px;	
+		padding-bottom: 3px;	
+}
+
+.carousel-indicators li{ /*indicadores*/
+	background-color: rgba(122,255,255,1);
+	border: black;
+
+}
+
+.carousel-control-prev-icon{ /*Color del boton volver de carousel*/
+	background-color: rgba(0,36,41,0.9);
+}
+
+.carousel-control-next-icon{ /*Color del boton proximo de carousel*/
+	background-color: rgba(0,36,41,0.9);
+}
+
+
+/***ICONOS***/
+.icono{	
+	color: #FFF589;
+	font-size: 1.5rem;	
+	text-shadow: 2px 2px 3px #000000;		
+}
+
+.iconoMenu{ /*iconos en los titulos o texto*/
+	color: #F1BA24;
+	font-style: italic oblique;	
+	font-weight: bold;
+	font-size: 1.3rem;	
+	text-shadow: 2px 2px 3px #000000;			
+}
+
+span{ /*iconos*/
+	padding-right: 10px;
+}
+
+
+/*Animación subtítulos*/
+section h2 {
+  animation-duration: 2.5s;
+  animation-name: movizq;
+}
+@keyframes movizq {
+	from {
+		margin-left: 100%;
+	    width: 100%
+	}
+	to {
+	    margin-left: 0%;
+	    width: 100%;
+	}
+
+}
+
+/*Animación subtítulos*/
+.efectoAparecer {
+  animation-duration: 1s;
+  animation-name: desvanecer;
+}
+@keyframes desvanecer{
+	0% {
+		opacity: 0;
+	}
+	100% {
+	    opacity: 1;
+	}
+}
+
+ul li{
+	margin-left: 20px;
+}
+
+.linkActivo{ /*Menu de navegacion pág activa*/
+	color:#00FFFF;
+	text-shadow: 2px 2px 3px #090959;
+}
+
+.linkActivo2{ /*SubMenu de navegacion pág activa*/
+	color:#C4FFFF;
+	text-shadow: 2px 2px 3px #090959;
+}
+
+
